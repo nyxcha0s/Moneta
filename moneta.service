@@ -1,0 +1,16 @@
+[Unit]
+Description=Moneta Financial Survival AI
+After=network.target
+
+[Service]
+Type=simple
+User=nyxcha0s
+WorkingDirectory=/home/nyxcha0s/moneta
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/home/nyxcha0s/moneta/.env
+ExecStart=/home/nyxcha0s/moneta/venv/bin/python moneta.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

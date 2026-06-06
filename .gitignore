@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment and secrets
+.env
+*.env
+
+# Medical and personal data
+kaiser_raw.txt
+labs_backup.txt
+med_logging.py
+import_kaiser.py
+reimport_kaiser_labs.py
+
+# Backups
+*.bak
+*.bak2
+*.bak.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Zone identifier files
+*:Zone.Identifier
+
+# Logs
+*.log
+
+# Claude config
+.claude/
